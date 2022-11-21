@@ -1,0 +1,44 @@
+{
+  "name": "str-similar",
+  "version": "1.0.0",
+  "description": "calculate similar of strings, support chinese.",
+  "keywords": [
+    "strings",
+    "chinese",
+    "similar"
+  ],
+  "main": "dist/index",
+  "typings": "dist/index.d.ts",
+  "dependencies": {
+    "commander": "^7.2.0",
+    "power-assert": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.12",
+    "eslint-config-egg": "^7.0.0",
+    "mocha": "^8.0.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.0",
+    "eslint": "5",
+    "eslint-plugin-babel": "^5.2.0",
+    "nyc": "^15.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yihuineng/similar-cn.git"
+  },
+  "author": "yihuineng",
+  "bin": {
+    "str-similar": "./dist/bin/str-similar.js"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts,js",
+    "test": "mocha 'test/**/*.test.ts' --require ts-node/register --recursive",
+    "test:cov": "nyc --reporter=lcov --reporter=text npm run test",
+    "build": "rm -rf ./dist && ./node_modules/typescript/bin/tsc && cp -r ./resource ./dist/resource && rm -rf ./dist/resource/local && grep -rl 'ts-node' ./dist/bin | xargs sed -i '' 's/ts-node/node/g'"
+  },
+  "files": [
+    "dist"
+  ]
+}

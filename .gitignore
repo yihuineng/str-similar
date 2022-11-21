@@ -1,0 +1,8 @@
+.idea
+resource/local
+dist
+coverage
+node_modules
+logs
+.nyc_output
+.run

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "inlineSourceMap":true,
+    "noImplicitThis": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "stripInternal": true,
+    "pretty": true,
+    "declaration": true,
+    "removeComments": false,
+    "types": [ "mocha", "node" ],
+    "outDir": "./dist"
+  },
+  "include": [
+    "bin",
+    "src",
+    "index.ts"
+  ]
+}
