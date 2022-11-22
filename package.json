@@ -1,10 +1,11 @@
 {
   "name": "str-similar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "calculate similar of strings, support chinese.",
   "keywords": [
-    "strings",
+    "string",
     "chinese",
+    "similarity",
     "similar"
   ],
   "main": "dist/index",
@@ -26,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:yihuineng/similar-cn.git"
+    "url": "git@github.com:yihuineng/str-similar.git"
   },
   "author": "yihuineng",
   "bin": {
