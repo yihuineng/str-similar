@@ -1,6 +1,6 @@
 {
   "name": "str-similar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "calculate similar of strings, support chinese.",
   "keywords": [
     "string",
@@ -11,8 +11,7 @@
   "main": "dist/index",
   "typings": "dist/index.d.ts",
   "dependencies": {
-    "commander": "^7.2.0",
-    "power-assert": "^1.6.1"
+    "commander": "^7.2.0"
   },
   "devDependencies": {
     "@types/mocha": "^9.0.0",

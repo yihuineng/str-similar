@@ -1,7 +1,6 @@
 
 
-const assert = require('power-assert');
-
+import assert from 'assert';
 import { StrSimilar } from '../src/similar';
 
 describe('main.test.ts', () => {
